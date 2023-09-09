@@ -36,6 +36,8 @@ content:
             messages,
             model: CHATGPT_MODEL,
         })
+
+        console.log(completion.choices[0].message)
     } catch (e) {
         console.error('Error while chat completion', e.message)
     }
